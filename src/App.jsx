@@ -1,15 +1,18 @@
-import React from 'react';
+import { useState } from "react";
 import "./css/App.css";
-import Navbar from './components/Navbar.jsx';
-import AddTask from './components/AddTask.jsx';
-import FilterApp from './components/FilterApp.jsx';
+import ApplyCounter from "./components/ApplyCounter.jsx";
+import TrackPage from "./components/TrackPage.jsx";
 
 function App() {
-  return(
+  const [totalCounter, setTotalCounter] = useState(0);
+  const [applidCounter, setAppliedCounter] = useState(0);
+  const [interviewCounter, setInterviewCounter] = useState(0);
+  const [offersCounter, setOffersCounter] = useState(0);
+
+  return (
     <>
-      <Navbar />
-      <AddTask />
-      <FilterApp />
+      <ApplyCounter totalCounter={totalCounter} appliedCounter={applidCounter} interviewCounter={interviewCounter} offersCounter={offersCounter} />
+      <TrackPage />
     </>
   );
 }

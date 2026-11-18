@@ -1,0 +1,41 @@
+main{
+    display: grid;
+}
+
+.add-apply{
+    display: grid;
+    grid-template-columns: 3fr 3fr 1fr;
+    gap: 12px;
+    padding: 2em 3em;
+
+    input, button{
+        padding: 12px;
+        border-radius: 12px;
+        outline: none;
+    }
+}
+
+input{
+    background-color: #32373894;
+    border: 2px solid #3c4143;
+    color: ghostwhite;
+    transition: 0.2s;
+}
+
+input:focus, input:active{
+    border: 2px solid #2f6bff78;
+    box-shadow: 0 0 20px #2f6bff78;
+}
+
+.add-btn{
+    background-color: var(--orange);
+    border: none;
+    outline: none;
+    font-weight: 700;
+    color: ghostwhite;
+    cursor: pointer;
+}
+
+.add-btn:active{
+    background-color: #FF7146;
+}

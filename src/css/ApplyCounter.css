@@ -1,0 +1,36 @@
+nav {
+  background-color: #272c2d;
+  display: grid;
+}
+
+.apply-logo {
+  display: flex;
+  padding: 1em 2em;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+#logo {
+  font-size: 20px;
+  
+  span {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--orange);
+  }
+}
+
+#counter span{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.counter-cards{
+  display: grid;
+  padding: 1em 2em;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  align-items: center;
+}

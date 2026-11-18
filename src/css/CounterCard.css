@@ -1,0 +1,11 @@
+.card{
+    padding: 1em;
+    background-color: #32373894;
+    border-radius: 16px;
+}
+
+ #count{
+    font-size: 2.5em;
+    color: var(--blue);
+    font-weight: 700;
+ }
