@@ -1,0 +1,16 @@
+nav{
+    display: flex;
+    padding: 1em 2em;
+    border-bottom: 2px solid #999;
+    justify-content: space-between;
+
+    span{
+        background-color: transparent;
+        font-weight: 700;
+    }
+}
+
+#logo{
+    font-weight: bold;
+    font-size: 20px;
+}

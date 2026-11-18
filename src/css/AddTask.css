@@ -1,0 +1,33 @@
+.search{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 2em 5em;
+    gap: 1rem;
+    justify-self: center;
+    
+}
+
+input{
+    padding: 1em 2em;
+    border: 2px solid #999;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+input:focus{
+   border: 2px solid #6068ae; 
+   box-shadow: 0 0 20px #6068ae4a;
+}
+
+button{
+    background-color: rgb(65, 65, 236);
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    padding: 1em 2em;
+    color: #fff;
+    cursor: pointer;
+}
