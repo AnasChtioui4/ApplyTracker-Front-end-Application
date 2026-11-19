@@ -20,6 +20,8 @@ input{
     border: 2px solid #3c4143;
     color: ghostwhite;
     transition: 0.2s;
+    border-radius: 12px;
+    padding: 12px;
 }
 
 input:focus, input:active{
@@ -38,4 +40,31 @@ input:focus, input:active{
 
 .add-btn:active{
     background-color: #FF7146;
+    scale: 0.95;
+    transition: 0.1s;
+}
+
+.search-filter{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 4fr 1fr;
+    padding: 0 3em;
+}
+
+.filter{
+    display: flex;
+    gap: 12px;
+
+    span{
+        padding: 1em;
+        border-radius: 12px;
+        border: 2px solid #3c4143;
+        background-color: #32373867;
+        cursor: pointer;
+    }
+}
+
+.selected{
+    background-color: var(--blue) !important;
+    border: 2px solid transparent !important;
 }

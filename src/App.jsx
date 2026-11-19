@@ -5,14 +5,28 @@ import TrackPage from "./components/TrackPage.jsx";
 
 function App() {
   const [totalCounter, setTotalCounter] = useState(0);
-  const [applidCounter, setAppliedCounter] = useState(0);
+  const [appliedCounter, setAppliedCounter] = useState(0);
+  const [wishlistCounter, setWishlistCounter] = useState(0);
   const [interviewCounter, setInterviewCounter] = useState(0);
   const [offersCounter, setOffersCounter] = useState(0);
+  const [rejectedCounter, setRejectedCounter] = useState(0);
 
   return (
     <>
-      <ApplyCounter totalCounter={totalCounter} appliedCounter={applidCounter} interviewCounter={interviewCounter} offersCounter={offersCounter} />
-      <TrackPage />
+      <ApplyCounter
+        totalCounter={totalCounter}
+        appliedCounter={appliedCounter}
+        interviewCounter={interviewCounter}
+        offersCounter={offersCounter}
+      />
+      <TrackPage
+        totalCounter={totalCounter}
+        appliedCounter={appliedCounter}
+        wishlistCounter={wishlistCounter}
+        interviewCounter={interviewCounter}
+        offersCounter={offersCounter}
+        rejectedCounter={rejectedCounter}
+      />
     </>
   );
 }
