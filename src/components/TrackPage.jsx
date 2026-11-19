@@ -29,6 +29,7 @@ function TrackPage({
   function handleSubmit(e) {
     e.preventDefault();
     setAppList([...appList, {id: Date.now(), place: company, title: role, status: "Wishlist" }]);
+    setRole(""); setCompany("");
   }
 
   return (
@@ -76,7 +77,7 @@ function TrackPage({
       </div>
       <ul className="app-list">
         {appList.map((app) => {
-          return <AppListItem />;
+          return <AppListItem key={app.id} place={app.place} title={app.title} status={app.status}/>;
         })}
       </ul>
     </main>
