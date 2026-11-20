@@ -1,4 +1,3 @@
-import React from "react";
 import "../css/CounterCard.css";
 
 function CounterCard({name, typeCount}) {

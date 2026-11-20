@@ -1,4 +1,6 @@
-body{
-    background-color: var(--black);
-    color: ghostwhite;
+body {
+  background-color: var(--black);
+  color: ghostwhite;
+  display: grid;
+  gap: 12px;
 }
