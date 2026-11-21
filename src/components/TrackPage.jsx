@@ -10,6 +10,7 @@ function TrackPage({
   interviewsCounter,
   offersCounter,
   rejectedCounter,
+  nextStatus
 }) {
   const [company, setCompany] = useState("");
   const [role, setRole] = useState("");
@@ -82,7 +83,9 @@ function TrackPage({
           const dateTime = new Date(app.id);
           return (
             <AppListItem
+              nextStatus={nextStatus}
               key={app.id}
+              appId={app.id}
               place={app.place}
               title={app.title}
               status={app.status}

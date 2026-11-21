@@ -1,7 +1,8 @@
 import React from "react";
 import "../css/AppListItem.css";
 
-function AppListItem({ date, title, place, status}) {
+function AppListItem({appId, date, title, place, status, nextStatus}) {
+  
   return (
     <li>
       <div id="infos">
@@ -14,7 +15,7 @@ function AppListItem({ date, title, place, status}) {
       </div>
       <div id="control">
         <span id="status">{status}</span>
-        <button id="next-status">{"Next Status ->"}</button>
+        <button id="next-status" onClick={()=>nextStatus(appId)}>{"Next Status ->"}</button>
         <button id="dlt-btn">X</button>
       </div>
     </li>
