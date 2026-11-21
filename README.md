@@ -20,7 +20,7 @@ People applying to many places at once lose track of deadlines, follow-ups, and 
 - [x] Summary counters (total, applied, interviews, offers)
 - [x] Add an application with company/school and role/program
 - [x] Filter bar with a count per status
-- [ ] List of applications with status badges
+- [x] List of applications with status badges
 - [ ] Move an application to the next status
 - [ ] Delete an application
 - [ ] Search by company or role
