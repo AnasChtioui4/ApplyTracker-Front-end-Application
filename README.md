@@ -21,7 +21,7 @@ People applying to many places at once lose track of deadlines, follow-ups, and 
 - [x] Add an application with company/school and role/program
 - [x] Filter bar with a count per status
 - [x] List of applications with status badges
-- [ ] Move an application to the next status
+- [x] Move an application to the next status
 - [ ] Delete an application
 - [ ] Search by company or role
 - [ ] Combine search and status filters
