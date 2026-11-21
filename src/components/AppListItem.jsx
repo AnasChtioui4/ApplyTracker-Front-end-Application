@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/AppListItem.css";
 
-function AppListItem({ date, title, place, status, statusIndex }) {
+function AppListItem({ date, title, place, status}) {
   return (
     <li>
       <div id="infos">
